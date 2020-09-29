@@ -60,11 +60,11 @@ app.post("/transfer", (req, res) => {
   console.log('/transfer')
   let updatedWallets
   try {
-    let currrentWallets = wallets.slice(0,3)
+    let currrentWallets = wallets
     updatedWallets = currrentWallets
     const srcWalletId = req.body.fromUser.walletId
     const dstWalletId = req.body.toUser.walletId
-    const transferAmount = req.body.amount
+    const transferAmount = parseInt(req.body.amount)
     let updatedSrcWallet
     let updatedDstWallet
     for (let i=0; i < currrentWallets.length; i++) {
