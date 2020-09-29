@@ -1,0 +1,19 @@
+{
+  "transactions": [
+    {
+      "id": "1",
+      "productName": "Rustic Fresh Bacon",
+      "price": "383.00"
+    },
+    {
+      "id": "2",
+      "productName": "Gorgeous Cotton Chair",
+      "price": "220.00"
+    },
+    {
+      "id": "3",
+      "productName": "Licensed Cotton Tuna",
+      "price": "773.00"
+    }
+  ]
+}

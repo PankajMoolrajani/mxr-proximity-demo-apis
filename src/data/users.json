@@ -1,0 +1,168 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "createdAt": "2020-09-28T18:31:15.565Z",
+      "name": "Mark",
+      "username": "mark",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/bungiwan/128.jpg",
+      "role": "PRIMARY",
+      "groupId": 101,
+      "companyId": 501,
+      "walletId": 601
+    },
+    {
+      "id": "2",
+      "createdAt": "2020-09-28T13:08:52.685Z",
+      "name": "Peter",
+      "username": "peter",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/sircalebgrove/128.jpg",
+      "role": "PRIMARY",
+      "groupId": 101,
+      "companyId": 501,
+      "walletId": 602
+    },
+    {
+      "id": "3",
+      "createdAt": "2020-09-28T04:22:21.257Z",
+      "name": "Mary",
+      "username": "mary",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/franciscoamk/128.jpg",
+      "role": "SECONDARY",
+      "groupId": 101,
+      "companyId": 501,
+      "walletId": 603
+    },
+    {
+      "id": "4",
+      "createdAt": "2020-09-28T21:44:27.632Z",
+      "name": "Diana",
+      "username": "diana",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/hugomano/128.jpg",
+      "role": "SECONDARY",
+      "groupId": 102,
+      "companyId": 501,
+      "walletId": 604
+    },
+    {
+      "id": "5",
+      "createdAt": "2020-09-28T16:38:14.539Z",
+      "name": "Jerry",
+      "username": "jerry",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/benefritz/128.jpg",
+      "role": "SECONDARY",
+      "groupId": 102,
+      "companyId": 501,
+      "walletId": 605
+    },
+    {
+      "id": "6",
+      "createdAt": "2020-09-28T05:00:39.836Z",
+      "name": "Alex",
+      "username": "alex",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/byrnecore/128.jpg",
+      "role": "SECONDARY",
+      "groupId": 102,
+      "companyId": 501,
+      "walletId": 606
+    },
+    {
+      "id": "7",
+      "createdAt": "2020-09-28T13:47:54.390Z",
+      "name": "Katie",
+      "username": "katie",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/liminha/128.jpg",
+      "role": "SECONDARY",
+      "groupId": 102,
+      "companyId": 501,
+      "walletId": 607
+    },
+    {
+      "id": "8",
+      "createdAt": "2020-09-28T05:47:01.207Z",
+      "name": "Tom",
+      "username": "tom",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/_pedropinho/128.jpg",
+      "role": "SECONDARY",
+      "groupId": 102,
+      "companyId": 501,
+      "walletId": 608
+    },
+    {
+      "id": "9",
+      "createdAt": "2020-09-28T11:34:42.347Z",
+      "name": "Bob",
+      "username": "bob",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/fiterik/128.jpg",
+      "role": "SECONDARY",
+      "groupId": 101,
+      "companyId": 501,
+      "walletId": 609
+    },
+    {
+      "id": "10",
+      "createdAt": "2020-09-28T02:47:54.899Z",
+      "name": "Lisa",
+      "username": "lisa",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/saschadroste/128.jpg",
+      "role": "PRIMARY",
+      "groupId": 103,
+      "companyId": 502,
+      "walletId": 608
+    },
+    {
+      "id": "11",
+      "createdAt": "2020-09-28T18:28:56.905Z",
+      "name": "Leo",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/chadengle/128.jpg",
+      "role": "SECONDARY",
+      "groupId": 103,
+      "companyId": 502,
+      "walletId": 611
+    },
+    {
+      "id": "12",
+      "createdAt": "2020-09-28T03:06:23.695Z",
+      "name": "Gary",
+      "username": "gary",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/yesmeck/128.jpg",
+      "role": "SECONDARY",
+      "groupId": 103,
+      "companyId": 502,
+      "walletId": 612
+    },
+    {
+      "id": "13",
+      "createdAt": "2020-09-28T16:30:11.869Z",
+      "name": "Danny",
+      "username": "danny",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/darylws/128.jpg",
+      "role": "SECONDARY",
+      "groupId": 104,
+      "companyId": 502,
+      "walletId": 613
+    },
+    {
+      "id": "14",
+      "createdAt": "2020-09-28T20:32:21.413Z",
+      "name": "Nancy",
+      "username": "nancy",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/ivanfilipovbg/128.jpg",
+      "role": "PRIMARY",
+      "groupId": 104,
+      "companyId": 502,
+      "walletId": 614
+    },
+    {
+      "id": "15",
+      "createdAt": "2020-09-28T22:47:59.048Z",
+      "name": "Alice",
+      "username": "alice",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/markjenkins/128.jpg",
+      "role": "SECONDARY",
+      "groupId": 104,
+      "companyId": 502,
+      "walletId": 615
+    }
+  ]
+}
