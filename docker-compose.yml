@@ -9,6 +9,6 @@ services:
     environment:
       - NODE_TLS_REJECT_UNAUTHORIZED=0
     volumes:
-      - ./:/mxr-graphql
-    # command: /bin/sleep 216000
+      - ./:/app
+    command: /bin/sleep 216000
     # command: node src/index.js

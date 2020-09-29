@@ -1,5 +1,6 @@
 import "dotenv/config";
 import cors from "cors";
+import fs from "fs";
 import express from "express";
 import { users } from "./data/users.json";
 import { wallets } from "./data/wallets.json";
@@ -53,6 +54,46 @@ app.get("/company/:comapnyId", (req, res) => {
     return null;
   });
   return null;
+});
+
+app.post("/transfer", (req, res) => {
+  console.log('/transfer')
+  let updatedWallets
+  try {
+    let currrentWallets = wallets.slice(0,3)
+    updatedWallets = currrentWallets
+    const srcWalletId = req.body.fromUser.walletId
+    const dstWalletId = req.body.toUser.walletId
+    const transferAmount = req.body.amount
+    let updatedSrcWallet
+    let updatedDstWallet
+    for (let i=0; i < currrentWallets.length; i++) {
+      let wallet = currrentWallets[i]
+      if (wallet.id == srcWalletId) {
+        updatedSrcWallet = wallet
+        updatedSrcWallet.balance = wallet.balance - transferAmount
+        updatedWallets[i] = updatedSrcWallet
+      }
+      if (wallet.id == dstWalletId) {
+        updatedDstWallet = wallet
+        updatedDstWallet.balance = wallet.balance + transferAmount
+        updatedWallets[i] = updatedDstWallet
+      }
+      fs.writeFileSync(
+        '/app/src/data/wallets.json', 
+        JSON.stringify(
+          {"wallets": updatedWallets}
+        ), function (err) {
+        if (err) throw err;
+        console.log('Replaced!');
+      });
+    } 
+  } catch(err) {
+    console.log(err)
+  }
+      
+    
+  return res.send({"status": "success"})
 });
 
 app.listen(process.env.PORT, () =>
