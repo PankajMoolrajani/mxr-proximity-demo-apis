@@ -1,0 +1,14 @@
+version: '3'
+services:
+  mxr-proximity-demo-apis:
+    build: .
+    image: mxr-proximity-demo-apis
+    container_name: mxr-proximity-demo-apis
+    ports:
+      - 5000:5000
+    environment:
+      - NODE_TLS_REJECT_UNAUTHORIZED=0
+    volumes:
+      - ./:/mxr-graphql
+    # command: /bin/sleep 216000
+    # command: node src/index.js
