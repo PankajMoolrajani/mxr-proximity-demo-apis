@@ -16,13 +16,14 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use((req, res, next) => {
   next();
+  console.log('incoming!')
 });
 
 app.post("/users/search", (req, res) => {
   return res.send(Object.values(users));
 });
 
-app.get("/user/:username", (req, res) => {
+app.get("/ewallet/user/:username", (req, res) => {
   const username = req.params.username;
   users.map((user) => {
     if (username === user.username) {
