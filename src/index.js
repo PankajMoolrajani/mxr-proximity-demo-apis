@@ -23,7 +23,7 @@ app.post("/users/search", (req, res) => {
   return res.send(Object.values(users));
 });
 
-app.get("/ewallet/user/:username", (req, res) => {
+app.get("/user/:username", (req, res) => {
   const username = req.params.username;
   users.map((user) => {
     if (username === user.username) {
