@@ -59,6 +59,7 @@ app.get("/company/:comapnyId", (req, res) => {
   const companyId = req.params.comapnyId;
   companies.map((company) => {
     if (companyId === company.id) {
+      company.users = users.filter(user => user.companyId == company.id)
       return res.send(company);
     }
     return null;
