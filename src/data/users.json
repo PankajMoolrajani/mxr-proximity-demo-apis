@@ -114,6 +114,7 @@
       "id": "11",
       "createdAt": "2020-09-28T18:28:56.905Z",
       "name": "Leo",
+      "username": "leo",
       "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/chadengle/128.jpg",
       "role": "SECONDARY",
       "groupId": 103,
