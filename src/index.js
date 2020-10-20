@@ -16,6 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use((req, res, next) => {
   next();
+  console.log('incoming!')
 });
 
 app.post("/users/search", (req, res) => {
@@ -37,7 +38,7 @@ app.get("/wallet/:walletId", (req, res) => {
   const walletId = req.params.walletId;
   wallets.map((wallet) => {
     if (walletId === wallet.id) {
-      wallet.transactions = transactions;
+      wallet.transactions = transactions.filter(transaction => transaction.walletId === wallet.id);
       return res.send(wallet);
     }
     return null;
@@ -45,10 +46,20 @@ app.get("/wallet/:walletId", (req, res) => {
   return null;
 });
 
+
+
+app.get('/transactions/search/:walletId', (req, res) => {
+  const walletId = req.params.walletId
+  const walletTransactions = transactions.filter(transaction => transaction.walletId === walletId)
+  return res.send(walletTransactions)
+})
+
+
 app.get("/company/:comapnyId", (req, res) => {
   const companyId = req.params.comapnyId;
   companies.map((company) => {
     if (companyId === company.id) {
+      company.users = users.filter(user => user.companyId == company.id)
       return res.send(company);
     }
     return null;
