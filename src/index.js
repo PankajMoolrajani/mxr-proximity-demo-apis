@@ -1,11 +1,10 @@
-import "dotenv/config";
-import cors from "cors";
-import fs from "fs";
-import express from "express";
-import { users } from "./data/users.json";
-import { wallets } from "./data/wallets.json";
-import { companies } from "./data/companies.json";
-import { transactions } from "./data/transactions.json";
+const cors = require('cors')
+const fs = require('fs')
+const express = require('express')
+const  { users } = require('./data/users.json')
+const  { wallets } = require('./data/wallets.json')
+const { companies } = require('./data/companies.json')
+const { transactions }  = require('./data/transactions.json')
 
 const app = express();
 
@@ -104,7 +103,7 @@ app.post("/transfer", (req, res) => {
   }
       
     
-  return res.send({"status": "success"})
+  return res.send(JSON.stringify({"status": "success"}))
 });
 
 app.listen(process.env.PORT, () =>
